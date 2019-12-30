@@ -1,77 +1,5 @@
 /* eslint-disable */
 <template>
-  <!-- <div class="d-flex align-items-stretch">
-    <sidebar />
-    <div id="content">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="p-5 page-container text-left">
-            <h6 class="name">Shina-Kelani Tolulope</h6>
-            <hr />
-            <br />
-            <div class="page-index">
-              <h1 class="page-index-title">ABOUT ME</h1>
-              <br />
-              <p class="page-text-content">
-                Hi my name is <span>Shina-Kelani Tolulope</span> I'm a Software Engineer. I've been
-                developing apps for about 2 years now, <br />
-                I love (💖) => { &#60;&#47;&#62; } ing all the time <br />
-              </p>
-            </div>
-            <br />
-            <div class="page-index">
-              <h5 class="page-index-title">Experience</h5>
-              <br />
-              <div class="page-index-content">
-                <h6>
-                  DEC 2018 to Present - Brimatel Global Networks
-                </h6>
-                <br />
-                <div class="page-index-content">
-                  <p style="font-weight: bolder">
-                    PROJECTS:
-                  </p>
-                  <p>
-                    Establishing design system artifacts and processes to improve design across the rage
-                    of product design
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="profile-highlight"></div>
-          <br />
-          <button class="btn btn-custom">
-            Contact Me
-          </button>
-        </div>
-        <div class="col-md-3 d-flex">
-          <div class="social-container d-flex">
-            <div class="p-5">
-              <i class="fas fa-search"></i>
-            </div>
-
-            <ul class="list-unstyled components mb-5">
-              <li>
-                <a href="#">Twitter</a>
-              </li>
-              <li class="">
-                <a href="#">Codepen</a>
-              </li>
-              <li class="">
-                <a href="#">LinkedIn</a>
-              </li>
-              <li class="">
-                <a href="#">Github</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <div class="page-container">
     <div class="profile-wrapper">
       <div class="profile">
@@ -85,7 +13,11 @@
               Shina-Kelani Tolulope
 
               <div class="profile-icons" @click="onFav()">
-                <svg id="icon-heart-o" viewBox="0 0 32 32" :fill="fav_activated ? 'red' : ''">
+                <svg
+                  id="icon-heart-o"
+                  viewBox="0 0 32 32"
+                  :fill="fav_activated ? 'red' : ''"
+                >
                   <title>icon-heart-o</title>
                   <path
                     d="M22.88 1.952c-2.72 0-5.184 1.28-6.88 3.456-1.696-2.176-4.16-3.456-6.88-3.456-4.48 0-9.024 3.648-9.024 10.592 0 7.232 7.776 12.704 15.072 17.248 0.256 0.16 0.544 0.256 0.832 0.256s0.576-0.096 0.832-0.256c7.296-4.544 15.072-10.016 15.072-17.248 0-6.944-4.544-10.592-9.024-10.592zM16 26.56c-4.864-3.072-12.736-8.288-12.736-14.016 0-5.088 3.040-7.424 5.824-7.424 2.368 0 4.384 1.504 5.408 4.032 0.256 0.608 0.832 0.992 1.472 0.992s1.248-0.384 1.472-0.992c1.024-2.528 3.040-4.032 5.408-4.032 2.816 0 5.824 2.304 5.824 7.424 0.064 5.728-7.808 10.976-12.672 14.016z"
@@ -102,19 +34,30 @@
             <div class="divider"></div>
             <div class="about">
               <br />
-              Hi my name is <span>Shina-Kelani Tolulope</span> I'm a Software Engineer. I've been
-              developing apps for about 2 years now, <br />
+              Hi my name is <span>Shina-Kelani Tolulope</span> I'm a Software
+              Engineer. I've been developing apps for about 2 years now, <br />
               I love (💖) => { &#60;&#47;&#62; } ing all the time
             </div>
           </div>
         </div>
       </div>
     </div>
-    <a href="https://github.com/kelanik8" target="_blamk" class="classic-btn btn-github">Github</a>
-    <a href="https://twitter.com/kelanik8" target="_blamk" class="classic-btn btn-twitter"
+    <a
+      href="https://github.com/kelanik8"
+      target="_blamk"
+      class="classic-btn btn-github"
+      >Github</a
+    >
+    <a
+      href="https://twitter.com/kelanik8"
+      target="_blamk"
+      class="classic-btn btn-twitter"
       >Twitter</a
     >
-    <a href="http://codepen.io/kelanik8/" target="_blamk" class="classic-btn btn-codepen"
+    <a
+      href="http://codepen.io/kelanik8/"
+      target="_blamk"
+      class="classic-btn btn-codepen"
       >Codepen</a
     >
     <a
@@ -122,7 +65,9 @@
       class="classic-btn btn-linkedin"
       >LinkedIn</a
     >
-    <a href="mailto:kelanik8@gmail.com" class="classic-btn btn-gmail">Contact Me</a>
+    <a href="mailto:kelanik8@gmail.com" class="classic-btn btn-gmail"
+      >Contact Me</a
+    >
   </div>
 </template>
 
@@ -283,28 +228,28 @@ export default {
     z-index: 10;
     &.btn-github {
       background: #24292e;
-      left: 40px;
+      left: 20px;
       top: 228px;
     }
     &.btn-twitter {
       background: #1da1f2;
-      left: 40px;
+      left: 20px;
       top: 78px;
     }
     &.btn-codepen {
       background: #1e1f26;
-      left: 40px;
+      left: 20px;
       top: 128px;
     }
     &.btn-linkedin {
       background: #0e76a8;
-      left: 40px;
+      left: 20px;
       top: 178px;
     }
     &.btn-gmail {
       background: #fff;
       color: #000;
-      left: 40px;
+      left: 20px;
       top: 30px;
     }
     &:hover {
