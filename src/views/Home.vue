@@ -111,6 +111,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+}
+
+$shadows: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+
 .page-container {
   display: flex;
   height: 100vh;
@@ -186,10 +194,10 @@ export default {
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        background: #fff;
+        background: #E0E5EC;;
         transform: scale(0.5);
         opacity: 0;
-        box-shadow: 0px 5px 10px 0px rgba(76, 70, 124, 0.2);
+        box-shadow: $shadows;
         transition: all 0.3s ease-in-out;
         transition: all 0.4s cubic-bezier(0.35, 0.57, 0.13, 0.88);
       }
@@ -208,20 +216,20 @@ export default {
     }
   }
   & .profile-wrapper {
-    background: #eef3f7;
     width: 410px;
     min-height: 480px;
-    box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
     border-radius: 15px;
     padding: 20px;
+    background-color: #e0e5ec;
+    // box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
   }
   & .classic-btn {
     position: absolute;
     text-decoration: none;
     padding: 5px 25px;
     border-radius: 4px;
-    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-    color: #fff;
+    box-shadow: $shadows;
+    color: #FFF;
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 16px;
@@ -257,5 +265,11 @@ export default {
       box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
     }
   }
+}
+</style>
+<style>
+.profile-wrapper, .profile-img-cover {
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5) !important;
 }
 </style>
