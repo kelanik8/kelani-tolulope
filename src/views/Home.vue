@@ -35,7 +35,7 @@
             <div class="about">
               <br />
               Hi my name is <span>Shina-Kelani Tolulope</span> I'm a Software
-              Engineer. I've been developing apps for about 2 years now, <br />
+              Engineer. I've been developing apps for about 4 years now, <br />
               I love (💖) => { &#60;&#47;&#62; } ing all the time
             </div>
           </div>
